@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:wght@700&family=Montserrat:wght@500;700&display=swap');
+
+*{
+    margin: 0;  
+    box-sizing: border-box;
+}
+body{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(30, 38%, 92%);
+}
+.container{
+    width: 500px;
+    border-radius: 0.6rem;
+    display: flex;
+    background-color: #fff;
+    
+}
+.img-card >picture > img{
+    width: 210px;
+    border-top-left-radius: 0.6rem;
+    border-bottom-left-radius: 0.6rem;
+    margin-bottom: -3.7px;
+}
+.details{
+    margin-left: 1.25rem;
+}
+.details > .title{
+    font-family: 'Montserrat';
+    font-weight: 500;
+    font-size: 0.875rem;
+    color: hsl(228, 12%, 48%);
+    margin-top: 1.2rem;
+    line-height: 2;
+    letter-spacing: 0.25rem;
+}
+.details > .perfume-desc{
+    font-family: 'Fraunces';
+    font-weight: 700;
+    font-size: 1.875rem;
+    line-height: 1;
+    margin: 0.625rem 0;
+    color: hsl(212, 21%, 14%);
+}
+.details > .description{
+    font-family: 'Montserrat';
+    font-size: 0.875rem;
+    color: hsl(228, 12%, 48%);
+    margin-bottom: 0.625rem;
+}
+.details > .price{
+    font-family: 'Fraunces';
+    color: hsl(158, 36%, 37%);
+    font-weight: 700;
+    font-size: 1.5rem;
+    position: relative;
+}
+span{
+    font-family: 'Montserrat';
+    font-weight: 500;
+    text-decoration: line-through;
+    color: hsl(228, 12%, 48%);
+    margin-left: 1.3rem;
+    font-size: 0.7rem;
+    position: absolute;
+    top: 0.6rem;
+}
+button{
+    font-family: 'Montserrat';
+    font-weight: 700;
+    font-size: 12px;
+    color: #fff;
+    background-color: hsl(158, 36%, 37%);
+    border: none;
+    padding: 0.6rem 3.1rem;
+    border-radius: 0.3rem;
+    margin:1rem 0;
+    transition: .25s ease;
+}
+button > img{
+    margin-right: 0.3rem;
+}
+button:hover{
+    background-color: hsl(158, 32%, 27%);
+    cursor: pointer;
+}
+
+@media (max-width:500px){
+    .container{
+        display: flex;
+        flex-direction: column;
+        width: 300px;
+    }
+    .img-card >picture > img{
+        width: 300px;
+        border-top-left-radius: 0.6rem;
+        border-top-right-radius: 0.6rem;
+        border-bottom-left-radius: 0;
+    }
+    
+}
